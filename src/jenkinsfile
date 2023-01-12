@@ -7,7 +7,7 @@ pipeline {
                }
             steps {
                 script{
-                    withSonarQubeEnv(credentialsId: 'sonar-token') {
+                    withSonarQubeEnv(credentialsId: 'sonar-tokens') {
     // some block
                         sh'maven clean package sonar:sonar'
                     }
